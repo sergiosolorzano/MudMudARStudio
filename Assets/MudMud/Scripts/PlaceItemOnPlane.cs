@@ -62,16 +62,16 @@ public class PlaceItemOnPlane : ARBase
                         instancedObjectT.transform.position = rayHit.point;
                         instancedGO = instancedObjectT.gameObject;
 
-                        Vector3 targetPostition = new Vector3(camera.transform.position.x,
+                        /*Vector3 targetPostition = new Vector3(camera.transform.position.x,
                                         instancedGO.transform.position.y,
                                         camera.transform.position.z);
 
-                        instancedGO.transform.LookAt(targetPostition);
+                        instancedGO.transform.LookAt(targetPostition);*/
 
-                        instancedGO.SetActive(true);
                         //init pointOfInt and AlignWithPointOfInt
                         m_ARController.pointOfInterest = instancedGO.transform.position;
                         m_ARController.AlignWithPointOfInterest(rayHit.point);
+                        instancedGO.SetActive(true);
                         objectInstanced = true;
                     }
                         else

@@ -324,6 +324,21 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 65395757606741458, guid: 0df92101f8577494e9ced1c4fabe947e,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 6.5596323
+      objectReference: {fileID: 0}
+    - target: {fileID: 65395757606741458, guid: 0df92101f8577494e9ced1c4fabe947e,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.04095474
+      objectReference: {fileID: 0}
+    - target: {fileID: 65395757606741458, guid: 0df92101f8577494e9ced1c4fabe947e,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 2.2369137
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0df92101f8577494e9ced1c4fabe947e, type: 2}
   m_IsPrefabParent: 0
@@ -564,7 +579,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Rotate Art Work
+  m_Text: Rotate
 --- !u!222 &470349254
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1704,7 +1719,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Scale Art Work
+  m_Text: Scale
 --- !u!222 &1572320833
 CanvasRenderer:
   m_ObjectHideFlags: 0

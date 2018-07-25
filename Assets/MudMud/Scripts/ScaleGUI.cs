@@ -11,7 +11,7 @@ public class ScaleGUI : ARBase
     private Slider scaleSlider;
 
     private Slider rotationSlider;
-    private float rotationAngle=0.0f;
+    private float rotationAngle=65.0f;
 
     private GameObject Item;
 
@@ -39,18 +39,9 @@ public class ScaleGUI : ARBase
 
         //RotateSlider
         rotationSlider = GameObject.FindWithTag("RotationSlider").GetComponent<Slider>();
-
-        var camera = GetCamera();
-        
-        /*Vector3 targetPostition = new Vector3(camera.transform.position.x,
-                                        transform.position.y,
-                                        camera.transform.position.z);
-
-        transform.LookAt(targetPostition);*/
-
         rotationSlider.value = rotationAngle;
         ARControllerScript.rotation = Quaternion.AngleAxis(rotationAngle, Vector3.up);
-
+        
         rotationSlider.onValueChanged.AddListener(delegate { SetRotation(); });
 
         //Debug.Log("InitialDistToCam " + InitialDistToCam() + " Initial min value " + slider.minValue);
